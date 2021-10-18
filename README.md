@@ -15,6 +15,7 @@
 
 - Windows 7/8/8.1
 - Windows 10
+- Kali on the Windows 10 Subsystem for Linux
 
 # :octocat: Developer
 1. [Hackeraj](https://www.facebook.com/raazkapoorkushwaha/)
