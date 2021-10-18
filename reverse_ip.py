@@ -9,7 +9,16 @@ def reverseiplookupsUsingHackerTarget(site):
     URL = "https://api.hackertarget.com/reverseiplookup/?q="
     combo = "{url}{website}".format(url=URL, website=site)
     r = requests.get(combo)
-    print(r.text)
+    counter = 0
+    content = r.text
+    sites = content.split("\n")
+
+    for i in sites:
+        if i:
+            counter += 1
+
+    print("Total Sites Hosting on the Server[" + str(counter) + "]")
+    print(content)
 # #print(dir(r)) #To know the all we can access 
 
 reverseiplookupsUsingHackerTarget(args.site)
